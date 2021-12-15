@@ -5,8 +5,7 @@
 
 class Platform(models.Model):
     _name = 'javaGaming.platform'
-    #declaramos variables de la entidad game
-    idplatform = field.Integer(required=true)    
+    #declaramos variables de la entidad game  
     name = fields.Char
     releaseData = field.Date
     price = field.Float

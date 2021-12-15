@@ -6,7 +6,7 @@
 class Game(models.Model):
     _name = 'javaGaming.game'
     #declaramos variables de la entidad game
-    idgame = field.Integer(required=true)    
+     
     name = fields.Char
     genre = fields.Char
     pegi = field.Integer
@@ -16,4 +16,4 @@ class Game(models.Model):
     #diferentes relaciones 
     platforms = field.Many2many('javaGaming.platform',String="Platform")
     employees= field.Many2many('javaGaming.employee',String="Employee")
-    purchase= field.One2Many('javaGaming.purchase','idgame',String="Purchase")
+    purchases= field.One2Many('javaGaming.purchase','game',String="Purchase")
