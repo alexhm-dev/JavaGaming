@@ -2,12 +2,11 @@
 {
     'name': "Java Gaming",
 
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'summary': """Tienda de juegos""",
 
     'description': """
-        Long description of module's purpose
+       Tienda  de juegos online donde los usuarios podran interactuar
+        con la aplicacion 
     """,
 
     'author': "G5c",
@@ -25,11 +24,11 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        
+        'templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'demo.xml',
     ],
 }
