@@ -16,4 +16,4 @@ class Game(models.Model):
     #diferentes relaciones 
     platforms = field.Many2many('javaGaming.platform',String="Platform")
     employees= field.Many2many('javaGaming.employee',String="Employee")
-    purchase= field.One2Many('javaGaming.purchase',String="Purchase")
+    purchase= field.One2Many('javaGaming.purchase','idgame',String="Purchase")
