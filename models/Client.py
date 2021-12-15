@@ -3,7 +3,7 @@
 # and open the template in the editor.
 
 
-class Game(models.Model):
+class Client(models.Model):
     _name = 'javaGaming.client'
     #declaramos variables de la entidad game 
    _inherit='res.users'
