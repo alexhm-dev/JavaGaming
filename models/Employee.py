@@ -9,3 +9,4 @@ class Employee(models.model):
     fechaContratacion = fields.Date()
     salario = fields.Float()  
     games=fields.Many2many('javaGaming.Game',String="Games")
+     

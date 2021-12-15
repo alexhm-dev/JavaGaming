@@ -8,3 +8,4 @@ class Purchase(models.model):
     purchaseDate = fields.Date()
     client = Many2One('javaGaming.purchases',String="Client")
     game = Many2One('javaGaming.Game',String="Game")
+     
