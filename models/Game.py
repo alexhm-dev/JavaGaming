@@ -2,9 +2,10 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
+from odoo import models,fields,api
 
 class Game(models.Model):
-    _name = 'javaGaming.game'
+    _name = 'javaGaming.Game'
     #declaramos variables de la entidad game
      
     name = fields.Char
@@ -14,6 +15,6 @@ class Game(models.Model):
     price = field.Float
     
     #diferentes relaciones 
-    platforms = field.Many2many('javaGaming.platform',String="Platform")
-    employees= field.Many2many('javaGaming.employee',String="Employee")
-    purchases= field.One2Many('javaGaming.purchase','game',String="Purchase")
+    #platforms = field.Many2many('javaGaming.Platform',String="Platform")
+   # employees= field.Many2many('javaGaming.Employee',String="Employee")
+    #purchases= field.One2Many('javaGaming.Purchase','game',String="Purchase")

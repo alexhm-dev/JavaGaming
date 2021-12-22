@@ -2,13 +2,14 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
+from odoo import models,fields,api
 
 class Client(models.Model):
-    _name = 'javaGaming.client'
+    _name = 'javaGaming.Client'
     #declaramos variables de la entidad game 
    _inherit='res.users'
    signUpDate :fields.Date
    
     
     #diferentes relaciones 
-    client_purchases = field.One2many('javaGaming.client','purchase',String="Purchase")
+    #client_purchases = field.One2many('javaGaming.Client','purchase',String="Purchase")
