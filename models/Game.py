@@ -5,16 +5,16 @@
 from odoo import models,fields,api
 
 class Game(models.Model):
-    _name = 'javaGaming.Game'
+    _name = 'java_gaming.Game'
     #declaramos variables de la entidad game
      
-    name = fields.Char
-    genre = fields.Char
-    pegi = field.Integer
-    releaseData = field.Date
-    price = field.Float
+    name = fields.Char()
+    genre = fields.Char()
+    pegi = fields.Integer()
+    releaseData = fields.Date()
+    price = fields.Float()
     
     #diferentes relaciones 
-    #platforms = field.Many2many('javaGaming.Platform',String="Platform")
-   # employees= field.Many2many('javaGaming.Employee',String="Employee")
-    #purchases= field.One2Many('javaGaming.Purchase','game',String="Purchase")
+    #platforms = field.Many2many('java_gaming.Platform',String="Platform")
+   # employees= field.Many2many('java_gaming.Employee',String="Employee")
+    #purchases= field.One2Many('java_gaming.Purchase','game',String="Purchase")

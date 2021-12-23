@@ -2,8 +2,8 @@
 
 from odoo import models,fields,api
 
-class Employee(models.model):
-    _name='javaGaming.Employee'
+class Employee(models.Model):
+    _name='java_gaming.Employee'
     _inherit='res.users'
    
     fechaContratacion = fields.Date()
@@ -11,4 +11,4 @@ class Employee(models.model):
    
     
     
-    #games=fields.Many2many('javaGaming.Game',String="Game")
+    #games=fields.Many2many('java_gaming.Game',String="Game")

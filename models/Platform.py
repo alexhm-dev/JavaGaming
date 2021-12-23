@@ -3,14 +3,15 @@
 # and open the template in the editor.
 
 from odoo import models,fields,api
+from datetime import timedelta
 
 class Platform(models.Model):
-    _name = 'javaGaming.Platform'
+    _name = 'java_Gaming.Platform'
     #declaramos variables de la entidad game  
-    name = fields.Char
-    releaseData = field.Date
-    price = field.Float
+    name = fields.Char()
+    releaseData = fields.Date()
+    price = fields.Float()
     
     #diferentes relaciones 
-    #games = field.Many2many('javaGaming.Game',ondelete='cascade',String="Game")
+    #games = field.Many2many('java_gaming.Game',ondelete='cascade',String="Game")
    

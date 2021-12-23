@@ -1,15 +1,12 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
 
 from odoo import models,fields,api
 
 class Client(models.Model):
-    _name = 'javaGaming.Client'
+    _name = 'java_gaming.Client'
     #declaramos variables de la entidad game 
    _inherit='res.users'
-   signUpDate :fields.Date
+   signUpDate =fields.Date(default=fields.Date.today)
    
     
     #diferentes relaciones 
-    #client_purchases = field.One2many('javaGaming.Client','purchase',String="Purchase")
+    #client_purchases = field.One2many('java_gaming.Client','purchase',String="Purchase")

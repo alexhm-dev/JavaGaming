@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Java Gaming",
+    'name': "java_Gaming",
 
     'summary': """Tienda de juegos""",
 
@@ -23,7 +23,7 @@
 
     # always loaded
     'data': [
-         'security/ir.model.access.csv',
+         #'security/ir.model.access.csv',
          'views/templates.xml',
          
     ],

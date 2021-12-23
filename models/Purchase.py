@@ -4,9 +4,9 @@
 
 from odoo import models,fields,api
 
-class Purchase(models.model):
-    _name='javaGaming.Purchase'
+class Purchase(models.Model):
+    _name='java_gaming.Purchase'
    
     purchaseDate = fields.Date()
-    #client = Many2One('javaGaming.Purchases',String="Client")
-    #game = Many2One('javaGaming.Game',String="Game")
+    #client = Many2One('java_gaming.Purchases',String="Client")
+    #game = Many2One('java_gaming.Game',String="Game")
