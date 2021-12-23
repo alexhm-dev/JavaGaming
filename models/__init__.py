@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from . import Platform
-#from . import Client
-#from . import Employee
-#from . import Game
-#from . import Purchase
+from . import platform
+from . import client
+from . import employee
+from . import game
+from . import Purchase

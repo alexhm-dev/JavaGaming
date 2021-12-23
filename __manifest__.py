@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "java_Gaming",
+    'name': "Gaming",
 
     'summary': """Tienda de juegos""",
 

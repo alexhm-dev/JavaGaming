@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import controllers.controllers
-import models.Platform
-#import models.Client
-#import models.Employee
-#import models.Game
-#import models.Purchase
+import models.platform
+import models.client
+import models.employee
+import models.game
+import models.Purchase
 
 
