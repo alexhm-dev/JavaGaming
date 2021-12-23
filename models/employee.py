@@ -2,9 +2,9 @@
 
 
 class Employee(models.model):
-    _name='javaGaming.Employee'
+    _name='java_gaming.employee'
     _inherit='res.users'
    
     fechaContratacion = fields.Date()
     salario = fields.Float()  
-    games=fields.Many2many('javaGaming.Game',String="Games")
+    games=fields.Many2many('java_gaming.game',String="Games")

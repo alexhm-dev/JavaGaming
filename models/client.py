@@ -4,11 +4,11 @@
 
 
 class Client(models.Model):
-    _name = 'javaGaming.client'
+    _name = 'java_gaming.client'
     #declaramos variables de la entidad game 
    _inherit='res.users'
    signUpDate :fields.Date
    
     
     #diferentes relaciones 
-    client_purchases = field.One2many('javaGaming.client','purchase',String="Purchase")
+    client_purchases = field.One2many('java_gaming.client','purchase',String="Purchase")

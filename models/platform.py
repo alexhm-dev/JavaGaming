@@ -4,12 +4,12 @@
 
 
 class Platform(models.Model):
-    _name = 'javaGaming.platform'
+    _name = 'java_gaming.platform'
     #declaramos variables de la entidad game  
     name = fields.Char
     releaseData = field.Date
     price = field.Float
     
     #diferentes relaciones 
-    games = field.Many2many('javaGaming.game',ondelete='cascade',String="Game")
+    games = field.Many2many('java_gaming.game',ondelete='cascade',String="Game")
    

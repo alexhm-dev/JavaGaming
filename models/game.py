@@ -4,7 +4,7 @@
 
 
 class Game(models.Model):
-    _name = 'javaGaming.game'
+    _name = 'java_gaming.game'
     #declaramos variables de la entidad game
      
     name = fields.Char
@@ -14,6 +14,6 @@ class Game(models.Model):
     price = field.Float
     
     #diferentes relaciones 
-    platforms = field.Many2many('javaGaming.platform',String="Platform")
-    employees= field.Many2many('javaGaming.employee',String="Employee")
-    purchases= field.One2Many('javaGaming.purchase','game',String="Purchase")
+    platforms = field.Many2many('java_gaming.platform',String="Platform")
+    employees= field.Many2many('java_gaming.employee',String="Employee")
+    purchases= field.One2Many('java_gaming.purchase','game',String="Purchase")
