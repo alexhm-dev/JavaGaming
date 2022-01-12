@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data><!-- window action --><!-- The following tag is an action definition for a "window action",that is an action opening a view or a set of views -->
+        <record model="ir.actions.act_window" id="game_list_action">
+            <field name="name">Game</field>
+            <field name="res_model">java_gaming.game</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Añade tu primer juego</p>
+            </field>
+        </record>
+        <!-- top level menu: no parent -->
+        <menuitem id="main_java_gaming_menu" name="Gaming"/>
+        <menuitem id="games_menu" name="Games" parent="main_java_gaming_menu"action="game_list_action"/>  
+    </data>
+</odoo>
