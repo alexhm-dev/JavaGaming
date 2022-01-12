@@ -13,5 +13,5 @@ class Platform(models.Model):
     price = fields.Float()
     
     #diferentes relaciones 
-    #games = field.Many2many('java_gaming.game',ondelete='cascade',String="Game")
+    games = fields.Many2many('java_gaming.game',String="Game")
    

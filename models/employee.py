@@ -11,4 +11,4 @@ class Employee(models.Model):
    
     
     
-    #games=fields.Many2many('java_gaming.game',String="Game")
+    games=fields.Many2many('java_gaming.game',String="Game")

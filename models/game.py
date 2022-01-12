@@ -15,6 +15,6 @@ class Game(models.Model):
     price = fields.Float()
     
     #diferentes relaciones 
-    #platforms = field.Many2many('java_gaming.platform',String="Platform")
-   # employees= field.Many2many('java_gaming.employee',String="Employee")
-    #purchases= field.One2Many('java_gaming.purchase','game',String="Purchase")
+    platforms = fields.Many2many('java_gaming.platform',String="Platform")
+    employees= fields.Many2many('java_gaming.employee',String="Employee")
+    purchases= fields.One2many('java_gaming.purchase','game',String="Purchase")
