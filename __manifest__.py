@@ -25,7 +25,8 @@
     'data': [
          #'security/ir.model.access.csv',
          'views/templates.xml',
-         'views/game.xml',
+         'views/gaming.xml',
+         'views/views.xml',
          
     ],
     # only loaded in demonstration mode

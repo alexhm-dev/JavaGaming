@@ -1,59 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="java_gaming.list">
-      <field name="name">java_gaming list</field>
-      <field name="model">java_gaming.java_gaming</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
-    -->
-
-    <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="java_gaming.action_window">
-      <field name="name">java_gaming window</field>
-      <field name="res_model">java_gaming.java_gaming</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-    -->
-
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="java_gaming.action_server">
-      <field name="name">java_gaming server</field>
-      <field name="model_id" ref="model_java_gaming_java_gaming"/>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record>
-    -->
-
-    <!-- Top menu item -->
-    <!--
-    <menuitem name="java_gaming" id="java_gaming.menu_root"/>
-    -->
-    <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="java_gaming.menu_1" parent="java_gaming.menu_root"/>
-    <menuitem name="Menu 2" id="java_gaming.menu_2" parent="java_gaming.menu_root"/>
-    -->
-    <!-- actions -->
-    <!--
-    <menuitem name="List" id="java_gaming.menu_1_list" parent="java_gaming.menu_1"
-              action="java_gaming.action_window"/>
-    <menuitem name="Server to list" id="java_gaming" parent="java_gaming.menu_2"
-              action="java_gaming.action_server"/>
-    -->
-  </data>
+    <data><!-- window action --><!-- The following tag is an action definition for a "window action",that is an action opening a view or a set of views -->      
+        <!-- top level menu: no parent -->
+        <menuitem id="main_java_gaming_menu" name="Java Gaming"/>
+        <menuitem id="javagaming_menu" name="Java Gaming" parent="main_java_gaming_menu"/>        
+    </data>
 </odoo>
