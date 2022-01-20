@@ -8,9 +8,9 @@ from datetime import timedelta
 class Platform(models.Model):
     _name = 'java_gaming.platform'
     #declaramos variables de la entidad game  
-    name = fields.Char()
-    releaseData = fields.Date()
-    price = fields.Float()
+    platform_name = fields.Char()
+    platform_releaseData = fields.Date()
+    platform_price = fields.Float()
     
     #diferentes relaciones 
     games = fields.Many2many('java_gaming.game',String="Game")
