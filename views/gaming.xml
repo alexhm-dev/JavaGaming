@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data><!-- window action --><!-- The following tag is an action definition for a "window action",that is an action opening a view or a set of views -->
-        <record model="ir.actions.act_window" id="game_list_action">
-            <field name="name">Game</field>
-            <field name="res_model">java_gaming.game</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-        <!-- top level menu: no parent -->
-        <menuitem id="games_menu" name="Games" parent="javagaming_menu" action="game_list_action"/>  
         <record model="ir.ui.view" id="view_gameTree">
             <field name="name">game</field>
             <field name="model">java_gaming.game</field>
@@ -18,6 +10,7 @@
                     <field name="name"/>
                     <field name="genre"/>
                     <field name="price"/>
+                    <field name="pegi"/>
                 </tree>
             </field>
         </record>
@@ -33,22 +26,33 @@
                             <field name="name"/>
                             <field name="genre"/>
                             <field name="price"/>
+                            <field name="pegi"/>
                         </group>
                         <group colspan="2" col="2">
                             <separator string="platformas" colspan="2"/>
                             <field name="platforms">
-                                <tree>
-                                    
-                                        <field name="name"/>
-                                        <field name="releaseData"/>
-                                        <field name="price"/>
-                                    
+                                <tree>        
+                                    <field name="platform_name"/>
+                                    <field name="platform_releaseData"/> 
                                 </tree>
                             </field>                        
                         </group>                      
                     </group>
                 </form>
             </field>
-        </record>     
+        </record> 
+        <!--
+                        MENU DE ACCIONES
+        -->
+        <record model="ir.actions.act_window" id="game_list_action">
+            <field name="name">Game</field>
+            <field name="res_model">java_gaming.game</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- top level menu: no parent -->  
+        <menuitem id="main_java_gaming_menu" name="Java Gaming"/>
+        <menuitem id="javagaming_menu" name="Java Gaming" parent="main_java_gaming_menu"/>
+        <menuitem id="games_menu" name="Games" parent="javagaming_menu" action="game_list_action"/>    
     </data>
 </odoo>

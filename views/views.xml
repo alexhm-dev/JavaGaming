@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data><!-- window action --><!-- The following tag is an action definition for a "window action",that is an action opening a view or a set of views -->      
-        <!-- top level menu: no parent -->
-        <menuitem id="main_java_gaming_menu" name="Java Gaming"/>
-        <menuitem id="javagaming_menu" name="Java Gaming" parent="main_java_gaming_menu"/>        
+    <data>     
+       <!-- <menuitem id="main_java_gaming_menu" name="Java Gaming"/>
+        <menuitem id="javagaming_menu" name="Java Gaming" parent="main_java_gaming_menu"/> 
+        -->
     </data>
 </odoo>
