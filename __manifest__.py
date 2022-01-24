@@ -27,6 +27,7 @@
          'views/templates.xml',
          'views/gaming.xml',
          'views/views.xml',
+         'views/employees.xml',
          
     ],
     # only loaded in demonstration mode

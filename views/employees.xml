@@ -13,6 +13,7 @@
                     <field name="name"/>
                     <field name="login"/>
                     <field name="email"/>
+                    <field name="fechaContratacion"/>
                     <field name="salario"/>
                 </tree>
             </field>
@@ -30,6 +31,7 @@
                             <field name="name"/>
                             <field name="login"/>
                             <field name="email"/>
+                            <field name="fechaContratacion"/>
                             <field name="salario"/>
                         </group>
                         <group colspan="2" col="2">
