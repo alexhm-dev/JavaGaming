@@ -28,6 +28,7 @@
          'views/gaming.xml',
          'views/views.xml',
          'views/employees.xml',
+         'views/clients.xml',
          
     ],
     # only loaded in demonstration mode

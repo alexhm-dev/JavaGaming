@@ -4,42 +4,40 @@
         
         <!-- top level menu: no parent -->
         
-        <record model="ir.ui.view" id="view_employeeTree">
-            <field name="name">employee</field>
-            <field name="model">java_gaming.employee</field>
+        <record model="ir.ui.view" id="view_clientTree">
+            <field name="name">client</field>
+            <field name="model">java_gaming.client</field>
             <field name="priority" eval="16"/>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
                     <field name="login"/>
                     <field name="email"/>
-                    <field name="fechaContratacion"/>
-                    <field name="salario"/>
+                    <field name="signUpDate"/>
                 </tree>
             </field>
         </record>
    
-        <record model="ir.ui.view" id="view_employeeForm">
-            <field name="name">employee</field>
-            <field name="model">java_gaming.employee</field>
+        <record model="ir.ui.view" id="view_clientForm">
+            <field name="name">client</field>
+            <field name="model">java_gaming.client</field>
             <field name="priority" eval="16"/>
             <field name="arch" type="xml">
                 <form>
                     <group colspan="4">
                         <group colspan="2" col="2">
-                            <separator string="PLANTILLA" colspan="2"/>
+                            <separator string="CLIENTELA" colspan="2"/>
                             <field name="name"/>
                             <field name="login"/>
                             <field name="email"/>
-                            <field name="fechaContratacion"/>
-                            <field name="salario"/>
+                            <field name="signUpDate"/>  
                         </group>
                         <group colspan="2" col="2">
-                            <separator string="Compras" colspan="2"/>
-                            <field name="games">
+                            <separator string="Juegos" colspan="2"/>
+                            <field name="client_purchases">
                                 <tree>
-                                    <field name="name"/>
-                                    <field name="pegi"/>
+                                    <field name="purchaseDate"/>
+                                    <field name="game"/>
                                 </tree>
                             </field>                        
                         </group>                      
@@ -47,14 +45,14 @@
                 </form>
             </field>
         </record> 
-        <record model="ir.actions.act_window" id="employee_list_action">
-            <field name="name">Employee</field>
-            <field name="res_model">java_gaming.employee</field>
+        <record model="ir.actions.act_window" id="client_list_action">
+            <field name="name">Client</field>
+            <field name="res_model">java_gaming.client</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
         <menuitem id="main_java_gaming_menu" name="Java Gaming"/>
         <menuitem id="javagaming_menu" name="Java Gaming" parent="main_java_gaming_menu"/>  
-        <menuitem id="employees_menu" name="Employees" parent="javagaming_menu" action="employee_list_action"/>      
+        <menuitem id="clients_menu" name="Clients" parent="javagaming_menu" action="client_list_action"/>      
     </data>
 </odoo>
