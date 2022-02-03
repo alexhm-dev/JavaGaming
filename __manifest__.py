@@ -26,6 +26,7 @@
          #'security/ir.model.access.csv',
          'views/templates.xml',
          'views/gaming.xml',
+         'views/employees.xml',
          'views/views.xml',
          
     ],
