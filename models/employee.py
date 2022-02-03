@@ -29,3 +29,4 @@ class Employee(models.Model):
     def _verify_pegi_value_save(self):
         if self.salario < 0 or self.salario>2000:
             raise exceptions.ValidationError("El salario tiene que ser entre (0,2000)")
+        

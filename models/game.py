@@ -51,7 +51,10 @@ class Game(models.Model):
                 },
             }
  
-    @api.constrains('price')
+    @api.constrains('pegi')
     def _verify_pegi_value_save(self):
          if self.pegi < 0 or self.pegi>18:
             raise exceptions.ValidationError("El pegi no debe ser menor que 0  o mayor que 18")
+        
+        
+   
